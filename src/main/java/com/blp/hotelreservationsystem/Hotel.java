@@ -1,20 +1,15 @@
 package com.blp.hotelreservationsystem;
 
 public class Hotel {
-    @Override
-    public String toString() {
-        return "Hotel{" +
-                "hotelName::'" + hotelName + '\'' +
-                ", rate::" + rate +
-                '}';
-    }
 
     private String hotelName = null;
-    private int rate = 0;
+    private int weekDayRate = 0;
+    private int weekEndRate = 0;
 
-    public Hotel(String name, int rates) {
+    public Hotel(String name, int weekDayRates, int weekEndRates) {
         this.hotelName = name;
-        this.rate = rates;
+        this.weekDayRate = weekDayRates;
+        this.weekEndRate = weekEndRates;
     }
 
     public String getHotelName() {
@@ -25,11 +20,19 @@ public class Hotel {
         this.hotelName = hotelName;
     }
 
-    public int getRate() {
-        return rate;
+    public int getWeekDayRate() {
+        return weekDayRate;
     }
 
-    public void setRate(int rate) {
-        this.rate = rate;
+    public void setWeekDayRate(int weekDayRate) {
+        this.weekDayRate = weekDayRate;
+    }
+
+    public int getWeekEndRate() {
+        return weekEndRate;
+    }
+
+    public void setWeekEndRate(int weekEndRate) {
+        this.weekEndRate = weekEndRate;
     }
 }
