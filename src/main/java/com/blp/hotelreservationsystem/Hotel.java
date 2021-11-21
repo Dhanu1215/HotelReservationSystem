@@ -3,36 +3,18 @@ package com.blp.hotelreservationsystem;
 public class Hotel {
 
     private String hotelName = null;
-    private int weekDayRate = 0;
-    private int weekEndRate = 0;
+    private int regularWeekDayRate = 0;
+    private int rewardWeekDayRate = 0;
+    private int regularWeekEndRate = 0;
+    private int rewardWeekEndRate = 0;
+    private int rating = 0;
 
-    public Hotel(String name, int weekDayRates, int weekEndRates) {
-        this.hotelName = name;
-        this.weekDayRate = weekDayRates;
-        this.weekEndRate = weekEndRates;
-    }
-
-    public String getHotelName() {
-        return hotelName;
-    }
-
-    public void setHotelName(String hotelName) {
+    public Hotel(String hotelName, int regularWeekDayRate, int rewardWeekDayRate,int regularWeekEndRate,int rewardWeekEndRate,int rating) {
         this.hotelName = hotelName;
-    }
-
-    public int getWeekDayRate() {
-        return weekDayRate;
-    }
-
-    public void setWeekDayRate(int weekDayRate) {
-        this.weekDayRate = weekDayRate;
-    }
-
-    public int getWeekEndRate() {
-        return weekEndRate;
-    }
-
-    public void setWeekEndRate(int weekEndRate) {
-        this.weekEndRate = weekEndRate;
+        this.regularWeekDayRate = regularWeekDayRate;
+        this.rewardWeekDayRate = rewardWeekDayRate;
+        this.regularWeekEndRate = regularWeekEndRate;
+        this.rewardWeekEndRate = rewardWeekEndRate;
+        this.rating = rating;
     }
 }

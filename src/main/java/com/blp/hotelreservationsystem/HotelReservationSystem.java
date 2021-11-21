@@ -7,18 +7,13 @@ import java.util.*;
  */
 
 public class HotelReservationSystem {
-    private List<Hotel> hotels;
+    public static ArrayList<Hotel> list = new ArrayList<>();
 
-    public HotelReservationSystem() {
-        this.hotels = new ArrayList<Hotel>();
-    }
-
-    public void add(Hotel hotel) {
-        this.hotels.add(hotel);
-    }
-
-    public List<Hotel> getHotelList() {
-        return this.hotels;
+    public static ArrayList<Hotel> addHotels(Hotel hotel1, Hotel hotel2, Hotel hotel3) {
+        list.add(hotel1);
+        list.add(hotel2);
+        list.add(hotel3);
+        return list;
     }
 }
 
