@@ -2,37 +2,66 @@ package com.blp.hotelreservationsystem;
 
 public class Hotel {
 
-    private String hotelName = null;
-    private int weekDayRate = 0;
-    private int weekEndRate = 0;
+    private String name;
+    private int regularWeekdayRate;
+    private int regularWeekendRate;
+    private int rewardsWeekdayRate;
+    private int rewardsWeekendRate;
+    private int rating;
 
-    public Hotel(String name, int weekDayRates, int weekEndRates) {
-        this.hotelName = name;
-        this.weekDayRate = weekDayRates;
-        this.weekEndRate = weekEndRates;
+    public Hotel(String name, int regularWeekdayRate, int regularWeekendRate, int rewardsWeekdayRate, int rewardsWeekendRate, int rating) {
+        this.name = name;
+        this.regularWeekdayRate = regularWeekdayRate;
+        this.regularWeekendRate = regularWeekendRate;
+        this.rewardsWeekdayRate = rewardsWeekdayRate;
+        this.rewardsWeekendRate = rewardsWeekendRate;
+        this.rating = rating;
+    }
+    public String getName() {
+        return name;
     }
 
-    public String getHotelName() {
-        return hotelName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setHotelName(String hotelName) {
-        this.hotelName = hotelName;
+    public int getRegularWeekdayRate() {
+        return regularWeekdayRate;
     }
 
-    public int getWeekDayRate() {
-        return weekDayRate;
+    public void setRegularWeekdayRate(int regularWeekdayRate) {
+        this.regularWeekdayRate = regularWeekdayRate;
     }
 
-    public void setWeekDayRate(int weekDayRate) {
-        this.weekDayRate = weekDayRate;
+    public int getRegularWeekendRate() {
+        return regularWeekendRate;
     }
 
-    public int getWeekEndRate() {
-        return weekEndRate;
+    public void setRegularWeekendRate(int regularWeekendRate) {
+        this.regularWeekendRate = regularWeekendRate;
     }
 
-    public void setWeekEndRate(int weekEndRate) {
-        this.weekEndRate = weekEndRate;
+    public int getRewardsWeekdayRate() {
+        return rewardsWeekdayRate;
+    }
+
+    public void setRewardsWeekdayRate(int rewardsWeekdayRate) {
+        this.rewardsWeekdayRate = rewardsWeekdayRate;
+    }
+
+    public int getRewardsWeekendRate() {
+        return rewardsWeekendRate;
+    }
+
+    public void setRewardsWeekendRate(int rewardsWeekendRate) {
+        this.rewardsWeekendRate = rewardsWeekendRate;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 }
